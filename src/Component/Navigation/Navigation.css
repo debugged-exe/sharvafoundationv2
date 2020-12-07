@@ -1,0 +1,14 @@
+.hov:hover
+{
+	color: #e88f0a;
+}
+
+.donate
+{
+	background-color: #e88f0a;
+}
+
+.donate:hover
+{
+	font-weight: 450;
+}
