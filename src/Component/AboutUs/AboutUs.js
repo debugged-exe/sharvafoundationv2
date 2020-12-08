@@ -15,8 +15,8 @@ const AboutUs = () => {
                         <div className='f4 pa2'>50 countries for a world free from poverty and injustice.</div>
                 </div>
                 <div className='flex flex-wrap'>
-                    <div style={{ maxWidth: '100%', height: 'auto', zIndex: '-1' }} data-aos='fade-up' className='w-60'>
-                        <img className='' src='http://d169hzb81ub7u3.cloudfront.net/charity/wp-content/uploads/sites/20/2015/03/about.jpg'></img>
+                    <div style={{ maxWidth: '100%', height: 'auto', zIndex: '-1' }} data-aos='fade-up' className='w-60 justify-center'>
+                        <img className='' src='http://d169hzb81ub7u3.cloudfront.net/charity/wp-content/uploads/sites/20/2015/03/about.jpg' alt=' '></img>
                     </div>
                     <div data-aos='fade-left' className='flex f4 w-30 justify-center flex-column tl'>
                         <div className='pb3'>We’re an international development organisation with our head office based in Greece. We also have offices right across Asia, the Americas and Europe. We believe the people whose lives our work affects should decide how we’re run.</div>
