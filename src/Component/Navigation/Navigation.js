@@ -13,9 +13,9 @@ const Navigation = ({src}) =>
 	}
 
 	return(
-		<nav style = {{display: 'flex', justifyContent: 'start', alignItems: 'center'}} className = "shadow-1 mb1 vert-align navbarItems">
-			<div className = "tc f3 link pa3 mh3 pointer logo" style = {{height: 80, width: 80, justifySelf: 'center'}}>
-				<img src = {`${src}`}></img>
+		<nav style = {{display: 'flex', justifyContent: 'start', alignItems: 'center'}} className = "shadow-1">
+			<div className = "tc f3 link pa3 ml3 pointer logo" style = {{height: 80, width: 80}}>
+				<img src = {`${src}`} alt=' '></img>
 			</div>
 			<div className="f3 menu-icon">
 			{
