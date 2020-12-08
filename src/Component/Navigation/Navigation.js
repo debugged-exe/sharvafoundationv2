@@ -13,7 +13,7 @@ const Navigation = ({src}) =>
 	}
 
 	return(
-		<nav style = {{display: 'flex', justifyContent: 'start', alignItems: 'center'}} className = "shadow-1">
+		<nav style = {{display: 'flex', justifyContent: 'start', alignItems: 'center'}} className = "vert-align shadow-1">
 			<div className = "tc f3 link pa3 ml3 pointer logo" style = {{height: 80, width: 80}}>
 				<img src = {`${src}`} alt=' '></img>
 			</div>
