@@ -8,7 +8,7 @@ const AboutUs = () => {
     }, []);
     return (
         <div className='mt4'>
-                <div data-aos='fade-down' style={{zIndex:'-1'}}>
+                <div data-aos='fade-down' style={{zIndex:'-1'}} className='tc'>
                     <div className='f2'>ABOUT SHARVA</div>
                         <div className='underline'></div>
                         <div className='f4 pa2'>We’re an international organisation, working with people in</div>
