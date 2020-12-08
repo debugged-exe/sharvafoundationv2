@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+.margin{
+    margin: 5% 0;
+}
+.parallax{
+    background: url('https://images.unsplash.com/photo-1422207258071-70754198c4a2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1041&q=80') no-repeat fixed center/cover;
+}
+
+.parallax-inner{
+    padding: 10%;
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.parallax-inner p{
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    margin: 2px;
+}
