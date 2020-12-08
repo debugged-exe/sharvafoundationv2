@@ -8,6 +8,7 @@ import '../Component/CounterUp/counterUp.css'
 
 import Testimonial from '../Component/Testimonial/Testimonial';
 import AboutUs from '../Component/AboutUs/AboutUs.js';
+import RecentPost from '../Component/RecentPost/RecentPost.js';
 class App extends Component {
   render() {
     return(
@@ -16,6 +17,7 @@ class App extends Component {
         <AboutUs/>
         <Counter />
         <Testimonial/>
+        <RecentPost/>
       </div>
     );
   }

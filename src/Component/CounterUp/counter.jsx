@@ -28,6 +28,13 @@ function Counter() {
         </div>
         <p>Food Kits</p>
       </div>
+      <div className="box-4">
+        <p className="fa fa-plus-square"></p>
+        <div className="counter" data-count="15">
+          <CounterUp end={15} duration={2} />
+        </div>
+        <p>Sanitary Pads</p>
+      </div>
     </section>
   );
 }
