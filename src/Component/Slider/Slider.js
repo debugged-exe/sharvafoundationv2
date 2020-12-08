@@ -32,7 +32,7 @@ class Slider extends Component{
 	render()
 	{
 		return(
-			<div className = "slider">
+			<div className = "slider mb3">
 				{
 					sliderArr.map((item,index) => {
 						return(
