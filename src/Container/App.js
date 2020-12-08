@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Navigation from '../Component/Navigation/Navigation.js';
+import Slider from '../Component/Slider/Slider.js';
 import Logo from '../Image/Logo.png';
 import './App.css';
 
@@ -14,6 +15,7 @@ class App extends Component {
     return(
       <div className="App">
         <Navigation src = {Logo}/>
+        <Slider />
         <AboutUs/>
         <Counter />
         <Testimonial/>
