@@ -20,11 +20,8 @@
 
 .slider
 {
-<<<<<<< HEAD
 	height: 550px;
-=======
-	height: 90vh;
->>>>>>> b4b7ba315eb757a2cac7f358db196e403e008168
+	/*height: 90vh;*/
 	width: 100%;
 	position: relative;
 	color: black;
