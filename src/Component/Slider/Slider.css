@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+.quote
+{
+	color: white;
+	position: absolute;
+	top: 65%;
+	left: 30%;
+	right: 70%;
+	background: none;
+	transform: translateY(-80%);
+	width: 40%;
+}
+
+.sty
+{
+	font-family: 'Dancing Script', cursive;
+	align-self: center;
+}
+
 .slider
 {
 	height: 500px;
@@ -72,16 +92,10 @@
 
 .donate1
 {
-	position: absolute;
-	top: 65%;
-	left: 45%;
-	right: 55%;
 	background: none;
-	transform: translateY(-80%);
-	width:9%;
-	height: 9%;
 	transition: 0.5s;
 	color: white;
+	align-self: center;
 }
 .donate1:hover
 {
