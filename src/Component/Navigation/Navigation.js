@@ -7,7 +7,7 @@ const Navigation = ({src}) =>
 	return(
 		<nav style = {{display: 'flex', justifyContent: 'start', alignItems: 'center'}} className = "shadow-1">
 			<div className = "tc f3 link pa3 ml3 pointer logo" style = {{height: 80, width: 80}}>
-				<img src = {`${src}`}></img>
+				<img src = {`${src}`} alt=' '></img>
 			</div>
 			<p className = "tc f3 link ph3 mh1 pointer grow hov">Home</p>
 			<p className = "tc f3 link ph3 mh1 pointer grow hov">Events</p>
