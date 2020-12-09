@@ -20,8 +20,8 @@
 
 .slider
 {
-	height: 550px;
-	/*height: 90vh;*/
+	/* height: 550px; */
+	height: 100vh;
 	width: 100%;
 	position: relative;
 	color: black;
@@ -64,7 +64,6 @@
 {
 	width: 5vmin;
 	height: 5vmin;
-	color: 
 }
 
 #goLeft:hover
