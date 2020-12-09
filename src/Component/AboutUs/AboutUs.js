@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
+import 'tachyons';
 import 'aos/dist/aos.css';
 
 const AboutUs = () => {
@@ -7,7 +8,7 @@ const AboutUs = () => {
         Aos.init({ duration: 1600 });
     }, []);
     return (
-        <div className='mt4'>
+        <div className='mt4 tc'>
                 <div data-aos='fade-down' style={{zIndex:'-1'}}>
                     <div className='f2'>ABOUT SHARVA</div>
                         <div className='underline'></div>
