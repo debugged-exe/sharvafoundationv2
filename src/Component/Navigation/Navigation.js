@@ -3,6 +3,14 @@ import {FaBars} from 'react-icons/fa';
 import {FaTimes} from 'react-icons/fa';
 import './Navigation.css';
 import 'tachyons';
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link,
+	useRouteMatch,
+	useParams
+  } from "react-router-dom";
 
 const Navigation = ({src}) => 
 {
@@ -23,8 +31,8 @@ const Navigation = ({src}) =>
 			}
 			</div>
 			<div className = {ham ? 'nav-menu active' : 'nav-menu'}>
-				<p className = "tc f3 link ph3 mh1 pointer grow hov">Home</p>
-				<p className = "tc f3 link ph3 mh1 pointer grow hov">Events</p>
+				<Link to="/" ><p className = "tc f3 link ph3 mh1 pointer grow hov">Home</p></Link>
+				<Link to="/event"><p className = "tc f3 link ph3 mh1 pointer grow hov">Events</p></Link>
 				<p className = "tc f3 link ph3 mh1 pointer grow hov">Join Us</p>
 				<p className = "tc f3 link ph3 mh1 pointer grow hov">About Us</p>
 				<p className = "tc f3 link ph3 mh1 pointer grow hov">Contact Us</p>

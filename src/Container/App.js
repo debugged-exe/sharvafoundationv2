@@ -11,6 +11,15 @@ import Testimonial from '../Component/Testimonial/Testimonial';
 import AboutUs from '../Component/AboutUs/AboutUs.js';
 import RecentPost from '../Component/RecentPost/RecentPost.js';
 import OurGoals from '../Component/OurGoals/OurGoals.js';
+import Event from '../Component/Events/Events.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
 
 class App extends Component {
   constructor()
@@ -28,15 +37,25 @@ class App extends Component {
     const {goal} = this.state;
 
     return(
+          <Router>
       <div className="App">
-        <Navigation src = {Logo}/>
-        <Slider />
-        <AboutUs/>
-        <Counter />
-        <OurGoals goal = {goal}/>
-        <Testimonial/>
-        <RecentPost/>
+        <Switch>
+          <Route exact path="/">
+            <Navigation src = {Logo}/>
+            <Slider />
+            <AboutUs/>
+            <Counter />
+            <OurGoals goal = {goal}/>
+            <Testimonial/>
+            <RecentPost/>
+          </Route>
+          <Route exact path="/event">
+            <Navigation src = {Logo}/>
+            <Event/>
+          </Route>
+        </Switch>
       </div>
+        </Router>
     );
   }
 }
