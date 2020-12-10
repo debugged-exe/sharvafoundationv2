@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import Aos from 'aos';
-import './RecentPost.css';
-const RecentPost = () => {
+import './Category.css';
+const Category = () => {
     useEffect(() => {
         Aos.init({ duration: 1600 });
     }, []);
@@ -38,4 +38,4 @@ const RecentPost = () => {
     );
 }
 
-export default RecentPost;
+export default Category;
