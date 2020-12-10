@@ -9,9 +9,12 @@ import '../Component/CounterUp/counterUp.css'
 
 import Testimonial from '../Component/Testimonial/Testimonial';
 import AboutUs from '../Component/AboutUs/AboutUs.js';
-import RecentPost from '../Component/RecentPost/RecentPost.js';
+import Category from '../Component/Category/Category.js';
 import OurGoals from '../Component/OurGoals/OurGoals.js';
 import Event from '../Component/Events/Events.js';
+
+import Footer from '../Component/Footer/Footer';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -46,12 +49,14 @@ class App extends Component {
             <AboutUs/>
             <Counter />
             <OurGoals goal = {goal}/>
+            <Category/>
             <Testimonial/>
-            <RecentPost/>
+            <Footer/>
           </Route>
           <Route exact path="/event">
             <Navigation src = {Logo}/>
             <Event/>
+            <Footer/>
           </Route>
         </Switch>
       </div>
