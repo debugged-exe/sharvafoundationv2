@@ -1,16 +1,26 @@
 import React, {Component} from 'react';
-import Navigation from '../Component/Navigation/Navigation.js';
-import Slider from '../Component/Slider/Slider.js';
-import Logo from '../Image/Logo.png';
 import './App.css';
 
+import Navigation from '../Component/Navigation/Navigation.js';
+
+import Slider from '../Component/Slider/Slider.js';
+
+import Logo from '../Image/Logo.png';
+
+import AboutUs from '../Component/AboutUs/AboutUs.js';
+
 import Counter from '../Component/CounterUp/counter.jsx';
+
 import '../Component/CounterUp/counterUp.css'
 
-import Testimonial from '../Component/Testimonial/Testimonial';
-import AboutUs from '../Component/AboutUs/AboutUs.js';
-import Category from '../Component/Category/Category.js';
 import OurGoals from '../Component/OurGoals/OurGoals.js';
+
+import CategoryList from '../Component/Category/CategoryList';
+
+import Testimonial from '../Component/Testimonial/Testimonial';
+
+import RecentPost from '../Component/RecentPost/RecentPost.js';
+
 import Event from '../Component/Events/Events.js';
 
 import Footer from '../Component/Footer/Footer';
@@ -23,7 +33,6 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
-import RecentPost from '../Component/RecentPost/RecentPost.js';
 
 class App extends Component {
   constructor()
@@ -36,6 +45,7 @@ class App extends Component {
       }
     }
   }
+
   render() {
 
     const {goal} = this.state;
@@ -50,18 +60,21 @@ class App extends Component {
             <AboutUs/>
             <Counter />
             <OurGoals goal = {goal}/>
-            <Category/>
+            <CategoryList/>
             <Testimonial/>
             <RecentPost/>
             <Footer/>
           </Route>
+
           <Route exact path="/event">
             <Navigation src = {Logo}/>
             <Event/>
             <Footer/>
           </Route>
         </Switch>
+
       </div>
+      
         </Router>
     );
   }
