@@ -36,6 +36,17 @@
 	display: none;
 }
 
+.link
+{
+	text-decoration: none;
+	color: black;
+}
+
+.link:hover
+{
+	text-decoration: none;
+}
+
 @media screen and (max-width: 950px){
 	.navbarItems
 	{
