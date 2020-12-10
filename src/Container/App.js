@@ -23,6 +23,7 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+import RecentPost from '../Component/RecentPost/RecentPost.js';
 
 class App extends Component {
   constructor()
@@ -51,6 +52,7 @@ class App extends Component {
             <OurGoals goal = {goal}/>
             <Category/>
             <Testimonial/>
+            <RecentPost/>
             <Footer/>
           </Route>
           <Route exact path="/event">
