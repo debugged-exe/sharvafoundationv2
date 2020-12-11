@@ -1,63 +1,77 @@
-.card{
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recent-card{
     cursor: pointer;
+    width: 240px;
+    height: 240px;
+    padding: 2rem 1rem;
+    background: #fff;
     position: relative;
-    width: 360px;
-    height: 360px;
-    transition: 0.3s ease-out;
-    box-shadow: 0 3px 15px rgba(0,  0, 0, .7);
-    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    margin: 1rem;
 }
 
-.card .imgBox{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.recent-card:hover{
+    transform: scale(1.1);
 }
 
-.card .imgBox img{
+.recent-card:before{
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     display: block;
-    transition: 0.5s;
-}
-
-.card .content{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 6px;
     width: 100%;
-    height: 80px;
-    background: #ef880a;
-    transition: all 0.5s cubic-bezier(.48,-0.28,0.41,1.4);
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.card:hover .content{
-    width: 100%;
-    height: 80%;
-    left: 0;
-    bottom: 0;
-}
-
-.content p{
-    margin: 10px 0 0;
-    transform: translateY(2em);
-    line-height: 1.3em;
-    transition: justify;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: 0.5s all;
     opacity: 0;
 }
-.card:hover .content p{
-    transform: translateY(0);
+
+.recent-card:hover:before{
     opacity: 1;
 }
-.card:hover{
-    transform: scale(1.08);
-    box-shadow: 0 3px 1.2em rgba(0,  0, 0, 1.5);
+
+.recent-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.recent-card .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: 0.5s all;
+
+}
+
+.recent-card:hover .info{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.recent-card .info h1{
+    margin: 0;
+}
+
+.recent-card .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+
 }
