@@ -12,6 +12,7 @@ import AboutUs from '../Component/AboutUs/AboutUs.js';
 import RecentPost from '../Component/RecentPost/RecentPost.js';
 import OurGoals from '../Component/OurGoals/OurGoals.js';
 import Event from '../Component/Events/Events.js';
+import JoinUs from '../Component/JoinUs/JoinUs.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -52,6 +53,12 @@ class App extends Component {
           <Route exact path="/event">
             <Navigation src = {Logo}/>
             <Event/>
+          </Route>
+           <Route exact path="/joinus">
+           <div>
+            <Navigation src = {Logo}/>
+            <JoinUs/>
+            </div>
           </Route>
         </Switch>
       </div>

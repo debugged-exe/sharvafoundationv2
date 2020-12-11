@@ -33,7 +33,7 @@ const Navigation = ({src}) =>
 			<div className = {ham ? 'nav-menu active' : 'nav-menu'}>
 				<Link className = "tc f3 link ph3 mh1 pointer grow hov" to="/" ><p>Home</p></Link>
 				<Link className = "tc f3 link ph3 mh1 pointer grow hov" to="/event"><p>Events</p></Link>
-				<p className = "tc f3 link ph3 mh1 pointer grow hov">Join Us</p>
+				<Link className = "tc f3 link ph3 mh1 pointer grow hov" to="/joinus"><p>Join Us</p></Link>
 				<p className = "tc f3 link ph3 mh1 pointer grow hov">About Us</p>
 				<p className = "tc f3 link ph3 mh1 pointer grow hov">Contact Us</p>
 				<p className = "tc f3 link ph3 mh1 pv1 br2 pointer grow donate">Donate</p>
