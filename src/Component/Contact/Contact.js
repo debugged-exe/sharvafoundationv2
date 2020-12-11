@@ -4,7 +4,7 @@ import { SiGmail } from 'react-icons/si';
 import './Contact.css';
 const Contact = () =>{
     return(
-        <section>
+        <section className='contact-section'>
         <div class="contact-container">
           <div data-aos='fade-right' class="left">
               <div className='flex flex-column pv3 pl4 pr6 justify-around'>
