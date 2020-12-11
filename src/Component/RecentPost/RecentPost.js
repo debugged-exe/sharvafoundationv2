@@ -9,7 +9,7 @@ const RecentPost = () => {
     }, []);
 
     return (
-        <div className='mb4'>
+        <div className='flex flex-column items-center mb4'>
             <div data-aos='fade-up' className='f1 tc'>Recents</div>
         <div data-aos='fade-right' className='wrapper'>
             <div className='recent-card'>
