@@ -24,6 +24,7 @@ import RecentPost from '../Component/RecentPost/RecentPost.js';
 import Event from '../Component/Events/Events.js';
 
 import Contact from '../Component/Contact/Contact';
+import Map from '../Component/Map/Map';
 
 import Footer from '../Component/Footer/Footer';
 
@@ -66,6 +67,7 @@ class App extends Component {
             <Testimonial/>
             <RecentPost/>
             <Contact/>
+            <Map/>
             <Footer/>
           </Route>
 
