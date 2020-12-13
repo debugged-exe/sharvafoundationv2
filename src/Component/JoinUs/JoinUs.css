@@ -1,5 +1,240 @@
-.header
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Lato', sans-serif;
+}
+#date{
+    height: .1px;
+    width: .1px;
+    visibility: hidden;
+}
+
+.but
 {
-	font-size: 2rem;
-	margin-top: 100px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.checkbox{
+    width: 18px;
+    height: 18px;
+}
+
+.checkboxWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.thanks{
+    display: none;
+    position: absolute;
+    /*background: white url('../static/images/logo.png') no-repeat center;*/
+    background-size: 200px 200px;
+    top: 750px;
+    left: 26%;
+    width: 700px;
+    height: 200px;
+    box-shadow: -2px 2px 15px #000000c9;
+}
+.bold{
+    font-weight: bold;
+}
+.thankstext p{
+    font-size: 1.4rem;
+    padding: 8px 0;
+    text-align: center;
+}
+.thankstext{
+    margin: 38px;
+}
+.hello{
+    font-size: 1.5rem;
+    padding: 12px 0;
+}
+.thanks i{
+    text-align: left;
+}
+
+.thanks i:hover{
+    color: #e88f0a;
+    cursor: pointer;
+}
+.show
+{
+    display: block;
+
+}
+
+.backgroundjoinus h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.margin{
+    margin-bottom: 10px;
+}
+.form-base{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0px 30px 432px;
+    /* align-items: center; */
+    background: rgb(255 255 255 / 61%);
+    font-size: 1.1rem;
+}
+.backgroundjoinus{
+    
+}
+.left {
+    display: inline-block;
+    text-align: left;
+    width: 24%;
+    /* margin-bottom: 14px; */
+    /* height: 11px; */
+}
+.right {
+    display: inline-block;
+    text-align: left;
+    width: 70%;
+}
+.center {
+    display: inline-block;
+    width: 6%;
+}
+.right input{
+    height: 30px;
+    width: 36%;
+    background: none;
+    border: 1px solid gray
+}
+#address{
+    height: 70px;
+    margin-bottom: 14px;
+}
+.right textarea{
+    width: 36%;
+    height: 100px;
+    background: none;
+}
+#more{
+    height: 100px;
+}
+.text-box{
+    display: flex;
+    align-items: center;
+    
+}
+#city,#state,#bloodgroup,#category,#cur_state,#cur_city{
+    width: 36.4%;
+    height: 26px;
+    background: none;
+}
+
+
+.submit-btn {
+        font-size: 1.2rem;
+        margin-left: 198px;
+        /* margin-top: 20px; */
+        height: 36px;
+        width: 159px;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        border: 2px solid black;
+    }
+
+.submit-btn:hover{
+    background-color: #e88f0a;
+    font-weight: bold;
+}
+.submit
+{
+    display: none;
+}
+.btns{
+    display: flex;
+}
+@media only screen and (max-width:1186px){
+
+    .form-base{
+        margin: 0px;
+        margin-left: 10px;
+    }
+    .backgroundjoinus h1{
+        text-align: left;
+        margin:10px 0px 15px 10px;
+    }
+    .submit-btn{
+        margin-left:20px;
+        margin-bottom: 10px;
+    }
+    .thanks{
+        left: 12%;
+        width: 73%;
+    }
+    .background{
+        background:none ;
+    }
+} 
+@media only screen and (max-width:575px){
+.thanks{
+    left: 7%;
+    width: 85%;
+}
+}
+
+@media only screen and (max-width:450px){
+    .right input{
+        width:62%;
+    }
+    .right textarea{
+        width: 62%;
+    }
+    #city,#state,#bloodgroup,#category,#cur_state,#cur_city{
+        width: 62%;
+    }
+}
+
+
+
+@media only screen and (max-width:300px){
+    .backgroundjoinus{
+        background-size: 300px 300px;
+    }
+    .right{
+        width: 100%;
+    }
+    .left{
+        width: 16%;
+    }
+    .text-box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+}
+
+.clickable
+{
+    display: block;
+}
+
+.submit-btn:disabled
+{
+    font-size: 1.2rem;
+    margin-left: 198px;
+    /* margin-top: 20px; */
+    height: 36px;
+    width: 159px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid grey;
+    background-color: #dddddd;
 }

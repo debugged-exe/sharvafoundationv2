@@ -74,6 +74,7 @@ class App extends Component {
            <div>
             <Navigation src = {Logo}/>
             <JoinUs/>
+            <Footer/>
             </div>
           </Route>
         </Switch>

@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si";
 
 const Footer = () => {
     return (
-        <footer className='bg-black white pv2'>
+        <footer className='bg-black white pv2 bottom'>
         <div className="ml3 mr3 flex justify-between pointer items-center flex-wrap h-15">
             <div className='f4'><a>Copyrights</a></div>
             <div className='f4'><a>Privacy Policy</a></div>
