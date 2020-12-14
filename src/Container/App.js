@@ -28,6 +28,7 @@ import Contact from '../Component/Contact/Contact';
 import Map from '../Component/Map/Map';
 
 import Footer from '../Component/Footer/Footer';
+import Donate from '../Component/Donate/Donate.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -80,6 +81,13 @@ class App extends Component {
            <div>
             <Navigation src = {Logo}/>
             <JoinUs/>
+            <Footer/>
+            </div>
+          </Route>
+          <Route exact path="/donate">
+           <div>
+            <Navigation src = {Logo}/>
+            <Donate/>
             <Footer/>
             </div>
           </Route>

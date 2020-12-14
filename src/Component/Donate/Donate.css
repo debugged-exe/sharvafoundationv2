@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* .thanks{
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 26%;
+    width: 750px;
+    height: 340px;
+    background-color: red;
+} */
+/* .show
+{
+    display: block;
+} */
+.msg{
+    margin-top: 90px;
+}
+
+.msg h1 , .msg h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.margin{
+    margin-bottom: 10px;
+}
+.form-base{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0px 30px 432px;
+    /* align-items: center; */
+    font-size: 1.1rem;
+    background: rgb(255 255 255 / 61%);
+}
+.backgrounddonateus{
+    /* background-size: cover; */
+    background-size: 400px 377px;
+
+}
+.left1 {
+    display: inline-block;
+    text-align: left;
+    width: 24%;
+    /* margin-bottom: 14px; */
+    /* height: 11px; */
+}
+.right1 {
+    display: inline-block;
+    text-align: left;
+    width: 70%;
+}
+.center1 {
+    display: inline-block;
+    width: 6%;
+}
+.right1 input{
+    height: 30px;
+    width: 256px;
+    background: none;
+    border: 1px solid gray
+}
+#address{
+    height: 70px;
+    margin-bottom: 14px;
+}
+.right1 textarea{
+    width: 257px;
+    height: 100px;
+    background: none;
+}
+#more{
+    height: 100px;
+}
+.text-box{
+    display: flex;
+    align-items: center;
+    
+}
+#city,#state,#country{
+    width: 259px;
+    height: 26px;
+    background: none;
+}
+
+
+.submit-btn {
+        font-size: 1rem;
+        margin-left: 198px;
+        margin-top: 20px;
+        height: 36px;
+        width: 120px;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        border: 2px solid black;
+    }
+.submit
+{
+    display: none;
+}
+.submit-btn:hover{
+    background-color: #e88f0a;
+    font-weight: bold;
+}
+
+.submit-btn:disabled {
+        font-size: 1rem;
+        margin-left: 198px;
+        margin-top: 20px;
+        height: 36px;
+        width: 120px;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        border: 2px solid gray;
+        background-color: #dddddd;
+    }
+
+.submit-btn a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.hide
+{
+    display: none;
+}
+
+@media only screen and (max-width:1186px){
+    .right1 input{
+        width: 175px;
+    }
+    .right1 textarea{
+        width: 175px;
+    }
+    .form-base{
+        margin: 0px;
+        margin-left: 10px;
+        
+    }
+    #city,#state,#country{
+        width: 177px;
+    }
+    .msg h1, .msg h2{
+        text-align: left;
+        margin:10px 0px 15px 10px;
+    }
+    .submit-btn{
+        margin-left:100px;
+        margin-bottom: 12px;
+    }
+    .background{
+        background:none ;
+    }
+} 
