@@ -91,23 +91,23 @@
 .backgroundjoinus{
     
 }
-.left {
+.left1 {
     display: inline-block;
     text-align: left;
     width: 24%;
     /* margin-bottom: 14px; */
     /* height: 11px; */
 }
-.right {
+.right1 {
     display: inline-block;
     text-align: left;
     width: 70%;
 }
-.center {
+.center1 {
     display: inline-block;
     width: 6%;
 }
-.right input{
+.right1 input{
     height: 30px;
     width: 36%;
     background: none;
@@ -117,7 +117,7 @@
     height: 70px;
     margin-bottom: 14px;
 }
-.right textarea{
+.right1 textarea{
     width: 36%;
     height: 100px;
     background: none;
@@ -190,10 +190,10 @@
 }
 
 @media only screen and (max-width:450px){
-    .right input{
+    .right1 input{
         width:62%;
     }
-    .right textarea{
+    .right1 textarea{
         width: 62%;
     }
     #city,#state,#bloodgroup,#category,#cur_state,#cur_city{
@@ -207,10 +207,10 @@
     .backgroundjoinus{
         background-size: 300px 300px;
     }
-    .right{
+    .right1{
         width: 100%;
     }
-    .left{
+    .left1{
         width: 16%;
     }
     .text-box{

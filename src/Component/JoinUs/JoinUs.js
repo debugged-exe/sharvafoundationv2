@@ -383,9 +383,9 @@ const JoinUs = () => {
       <div className="form-base" id="form">
         <h2>Personal Information</h2>
         <div className="margin">
-          <div className="left"> Name</div>
-          <div className="center">:</div>
-          <div className="right">
+          <div className="left1"> Name</div>
+          <div className="center1">:</div>
+          <div className="right1">
             <input
               className="input"
               type="text"
@@ -399,9 +399,9 @@ const JoinUs = () => {
           <div className="f4 red">{`${nameErr}`}</div>
         </div>
         <div className="margin">
-          <div className="left"> DOB</div>
-          <div className="center">:</div>
-          <div className="right">
+          <div className="left1"> DOB</div>
+          <div className="center1">:</div>
+          <div className="right1">
             <input
               className="input"
               type="date"
@@ -416,9 +416,9 @@ const JoinUs = () => {
         </div>
         <h2>Contact Information</h2>
         <div className="margin">
-          <div className="left"> Email Id</div>
-          <div className="center">:</div>
-          <div className="right">
+          <div className="left1"> Email Id</div>
+          <div className="center1">:</div>
+          <div className="right1">
             <input
               className="input"
               type="email"
@@ -432,9 +432,9 @@ const JoinUs = () => {
           <div className="f4 red">{`${emailErr}`}</div>
         </div>
         <div className="margin">
-          <div className="left">Phone Number</div>
-          <div className="center">:</div>
-          <div className="right">
+          <div className="left1">Phone Number</div>
+          <div className="center1">:</div>
+          <div className="right1">
             <input
               className="input"
               type="phone"
@@ -451,9 +451,9 @@ const JoinUs = () => {
         </div>
         <div className="margin">
           <div className="text-box">
-            <div className="left">Permanent Address</div>
-            <div className="center">:</div>
-            <div className="right">
+            <div className="left1">Permanent Address</div>
+            <div className="center1">:</div>
+            <div className="right1">
               <textarea
                 className="input"
                 id="permanentAddress"
@@ -467,9 +467,9 @@ const JoinUs = () => {
           <div className="f4 red">{`${permAddErr}`}</div>
         </div>
         <div className="margin">
-          <div className="left">City</div>
-          <div className="center">:</div>
-          <div className="right">
+          <div className="left1">City</div>
+          <div className="center1">:</div>
+          <div className="right1">
             <select 
             className="citySelect" 
             id="city" 
@@ -1107,9 +1107,9 @@ const JoinUs = () => {
           <div className="f4 red">{`${permCityErr}`}</div>
         </div>
         <div className="margin">
-          <div className="left">State</div>
-          <div className="center">:</div>
-          <div className="right">
+          <div className="left1">State</div>
+          <div className="center1">:</div>
+          <div className="right1">
             <select 
             id="state" 
             name="per_state"
@@ -1177,9 +1177,9 @@ const JoinUs = () => {
         </div>
         <div className="margin">
           <div className="text-box">
-            <div className="left">Current Address</div>
-            <div className="center">:</div>
-            <div className="right">
+            <div className="left1">Current Address</div>
+            <div className="center1">:</div>
+            <div className="right1">
               <textarea
                 className="input"
                 id="currentAddress"
@@ -1193,9 +1193,9 @@ const JoinUs = () => {
           <div className="f4 red">{`${currAddErr}`}</div>
         </div>
         <div className="margin">
-          <div className="left">City</div>
-          <div className="center">:</div>
-          <div className="right">
+          <div className="left1">City</div>
+          <div className="center1">:</div>
+          <div className="right1">
             <select 
             className="citySelect" 
             id="cur_city" 
@@ -1826,9 +1826,9 @@ const JoinUs = () => {
           <div className="f4 red">{`${currCityErr}`}</div>
         </div>
         <div className="margin">
-          <div className="left">State</div>
-          <div className="center">:</div>
-          <div className="right">
+          <div className="left1">State</div>
+          <div className="center1">:</div>
+          <div className="right1">
             <select 
             id="cur_state" 
             name="cur_state"
@@ -1878,9 +1878,9 @@ const JoinUs = () => {
           <div className="f4 red">{`${currStateErr}`}</div>
         </div>
         <div className="margin">
-          <div className="left">Blood Group</div>
-          <div className="center">:</div>
-          <div className="right">
+          <div className="left1">Blood Group</div>
+          <div className="center1">:</div>
+          <div className="right1">
             <select 
             id="bloodgroup" 
             name="blood_group"
@@ -1902,9 +1902,9 @@ const JoinUs = () => {
         </div>
         <h2>Individual's Category</h2>
         <div className="margin">
-          <div className="left">Category</div>
-          <div className="center">:</div>
-          <div className="right">
+          <div className="left1">Category</div>
+          <div className="center1">:</div>
+          <div className="right1">
             <select 
             id="category" 
             name="category"
@@ -1921,9 +1921,9 @@ const JoinUs = () => {
         </div>
         <div className="margin">
           <div className="text-box">
-            <div className="left">Why do you want to join us?</div>
-            <div className="center">:</div>
-            <div className="right">
+            <div className="left1">Why do you want to join us?</div>
+            <div className="center1">:</div>
+            <div className="right1">
               <textarea
                 className="input"
                 name="cause"
