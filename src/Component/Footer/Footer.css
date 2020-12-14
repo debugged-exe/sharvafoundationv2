@@ -14,3 +14,9 @@
 .gm:hover{
     color: #DB4437;
 }
+
+.bottom
+{
+	bottom: 0;
+	width: 100%;
+}
