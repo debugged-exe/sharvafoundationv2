@@ -17,9 +17,23 @@ class Slider extends Component{
 	{
 		super();
 		this.state = {
-			x: 0
+			x: 0,
+			hover: false,
+			btnStyle: {}
 		}
 	}
+	
+	toggleHandler = () => {
+	        this.setState({hover: !this.state.hover});
+	        if(this.state.hover)
+	        {
+	            this.setState({btnStyle: {color: 'white', border:'2px solid white'}});
+	        }
+	        else
+	        {
+	           this.setState({btnStyle: {color: 'black', border:'2px solid black'}});
+	        }
+	    }	
 
 	goLeft = () => {
 		(this.state.x === 0) ? this.setState({x: -100*(sliderArr.length-1)}) : this.setState({x: this.state.x+100});
@@ -47,7 +61,7 @@ class Slider extends Component{
 								<div className="quote" style = {{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
 									<p className="tc pa1 f2 sty">{Quotes[index]}</p>
 									<p className="tc f3 sty mb2 sty">{By[index]}</p>
-									<div className = "tc pv2 ph3 f4 link br2 ba bw1 pointer ma2 donate1 fw6">Donate</div>
+									<div style = {this.state.btnStyle} onMouseEnter = {() => this.toggleHandler()} onMouseLeave = {() => this.toggleHandler()} className = "tc pv2 ph3 f4 link br2 ba bw1 pointer ma2 donate1 fw6">Donate</div>
 								</div>
 							</div>
 						);
