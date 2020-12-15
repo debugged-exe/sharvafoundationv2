@@ -23,8 +23,8 @@ const OurGoals = ({goal}) =>
         		<div style = {{width: `${width}%`}} className="filled br3 tc pa1 f5 white fw5">{`₹ ${complete} out of ₹ ${total}`}</div>
             </div>
             <div data-aos='fade-up' className='w-60 mt4 flex justify-center'>
-            	<div className = "mh2 br3 ba btn ph4 pv3">MAKE DONATION</div>
-            	<div className = "mh2 br3 ba btn ph4 pv3">BECOME A VOLUNTEER</div>
+            	<div style={{border:"2px solid #e88f0a"}} className = "mh2 br3 ba btn ph4 pv3 grow">MAKE DONATION</div>
+            	<div style={{border:"2px solid #e88f0a"}} className = "mh2 br3 ba btn ph4 pv3 grow">BECOME A VOLUNTEER</div>
             </div>
         </div>
     );

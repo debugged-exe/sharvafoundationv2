@@ -36,6 +36,22 @@
 	display: none;
 }
 
+.link
+{
+	text-decoration: none;
+	color: black;
+}
+
+.link:hover
+{
+	text-decoration: none;
+}
+
+.link:visited
+{
+	border-color: white;
+}
+
 @media screen and (max-width: 950px){
 	.navbarItems
 	{

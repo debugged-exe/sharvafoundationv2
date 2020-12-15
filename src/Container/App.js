@@ -1,17 +1,34 @@
 import React, {Component} from 'react';
-import Navigation from '../Component/Navigation/Navigation.js';
-import Slider from '../Component/Slider/Slider.js';
-import Logo from '../Image/Logo.png';
 import './App.css';
 
+import Navigation from '../Component/Navigation/Navigation.js';
+
+import Slider from '../Component/Slider/Slider.js';
+
+import Logo from '../Image/Logo.png';
+
+import AboutUs from '../Component/AboutUs/AboutUs.js';
+
 import Counter from '../Component/CounterUp/counter.jsx';
+
 import '../Component/CounterUp/counterUp.css'
 
-import Testimonial from '../Component/Testimonial/Testimonial';
-import AboutUs from '../Component/AboutUs/AboutUs.js';
-import RecentPost from '../Component/RecentPost/RecentPost.js';
 import OurGoals from '../Component/OurGoals/OurGoals.js';
+
+import CategoryList from '../Component/Category/CategoryList';
+
+import Testimonial from '../Component/Testimonial/Testimonial';
+
+import RecentPost from '../Component/RecentPost/RecentPost.js';
+
 import Event from '../Component/Events/Events.js';
+import JoinUs from '../Component/JoinUs/JoinUs.js';
+
+import Contact from '../Component/Contact/Contact';
+import Map from '../Component/Map/Map';
+
+import Footer from '../Component/Footer/Footer';
+import Donate from '../Component/Donate/Donate.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -32,6 +49,7 @@ class App extends Component {
       }
     }
   }
+
   render() {
 
     const {goal} = this.state;
@@ -46,15 +64,37 @@ class App extends Component {
             <AboutUs/>
             <Counter />
             <OurGoals goal = {goal}/>
+            <CategoryList/>
             <Testimonial/>
             <RecentPost/>
+            <Contact/>
+            <Map/>
+            <Footer/>
           </Route>
+
           <Route exact path="/event">
             <Navigation src = {Logo}/>
             <Event/>
+            <Footer/>
+          </Route>
+           <Route exact path="/joinus">
+           <div>
+            <Navigation src = {Logo}/>
+            <JoinUs/>
+            <Footer/>
+            </div>
+          </Route>
+          <Route exact path="/donate">
+           <div>
+            <Navigation src = {Logo}/>
+            <Donate/>
+            <Footer/>
+            </div>
           </Route>
         </Switch>
+
       </div>
+      
         </Router>
     );
   }
