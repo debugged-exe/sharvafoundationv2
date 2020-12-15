@@ -73,7 +73,7 @@ const Contact = () =>{
         <div className="contact-container">
           <div data-aos='fade-right' className="left">
               <div className='flex flex-column pv3 pl4 pr6 justify-around'>
-                <h2>Connect Us</h2>
+                <h2>Connect With Us</h2>
                 <input 
                 placeholder='Enter Your Name' 
                 className="br3 shadow-4 mv3 pa2 input-reset ba bg-transparent hover-bg-black hover-black w-100" 
