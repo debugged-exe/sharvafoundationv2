@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './OurGoals.css';
@@ -6,6 +6,22 @@ import 'tachyons';
 
 const OurGoals = ({goal}) =>
 {
+
+    let btnStyle;
+
+    const [hover, toggleHover] = useState(false);
+
+    const toggleHandler = () => {
+        toggleHover(!hover)
+        if(hover)
+        {
+            btnStyle = {color: 'white', border:'2px solid #e88f0a'}
+        }
+        else
+        {
+            btnStyle = {color: 'black', border:'2px solid #e88f0a'}
+        }
+    }
 
 	const {total, complete} = goal;
 	const width = (complete*100)/total;
@@ -23,8 +39,8 @@ const OurGoals = ({goal}) =>
         		<div style = {{width: `${width}%`}} className="filled br3 tc pa1 f5 white fw5">{`₹ ${complete} out of ₹ ${total}`}</div>
             </div>
             <div data-aos='fade-up' className='w-60 mt4 flex justify-center'>
-            	<div style={{border:"2px solid #e88f0a"}} className = "mh2 br3 ba btn ph4 pv3 grow">MAKE DONATION</div>
-            	<div style={{border:"2px solid #e88f0a"}} className = "mh2 br3 ba btn ph4 pv3 grow">BECOME A VOLUNTEER</div>
+            	<div style={btnStyle} onMouseEnter = {() => toggleHandler()} onMouseLeave = {() => toggleHandler()} className = "mh2 br3 ba btn ph4 pv3 grow">MAKE DONATION</div>
+            	<div style={btnStyle} className = "mh2 br3 ba btn ph4 pv3 grow">BECOME A VOLUNTEER</div>
             </div>
         </div>
     );
