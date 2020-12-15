@@ -68,8 +68,6 @@ class App extends Component {
             <CategoryList/>
             <Testimonial/>
             <RecentPost/>
-            <Contact/>
-            <Map/>
           </Route>
 
           <Route exact path="/event">
