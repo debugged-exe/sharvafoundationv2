@@ -57,9 +57,10 @@ class App extends Component {
     return(
           <Router>
       <div className="App">
+      <Navigation src = {Logo}/>
+
         <Switch>
           <Route exact path="/">
-            <Navigation src = {Logo}/>
             <Slider />
             <AboutUs/>
             <Counter />
@@ -67,32 +68,42 @@ class App extends Component {
             <CategoryList/>
             <Testimonial/>
             <RecentPost/>
-            <Contact/>
-            <Map/>
-            <Footer/>
           </Route>
 
           <Route exact path="/event">
-            <Navigation src = {Logo}/>
             <Event/>
-            <Footer/>
           </Route>
+
            <Route exact path="/joinus">
            <div>
-            <Navigation src = {Logo}/>
             <JoinUs/>
-            <Footer/>
             </div>
           </Route>
+
+          <Route exact path="/contact">
+           <div>
+            <Contact/>
+            <Map/>
+            </div>
+          </Route>
+
+          <Route exact path="/about">
+           <div style={{marginTop:100}}>
+            <AboutUs/>
+            <Counter />
+            <OurGoals goal = {goal}/>
+            <CategoryList/>
+            </div>
+          </Route>
+
           <Route exact path="/donate">
            <div>
-            <Navigation src = {Logo}/>
             <Donate/>
-            <Footer/>
             </div>
           </Route>
         </Switch>
 
+      <Footer/>
       </div>
       
         </Router>
