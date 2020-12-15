@@ -18,6 +18,11 @@
 	align-self: center;
 }
 
+.sty:hover{
+	color: #e88f0a;
+	cursor: pointer;
+}
+
 .slider
 {
 	/* height: 550px; */
@@ -64,11 +69,12 @@
 {
 	width: 5vmin;
 	height: 5vmin;
+	transition: 0.5s;
 }
 
-#goLeft:hover
+.icon:hover
 {
-	background: rgba(0,0,0,0.356);
+	color: white;
 }
 
 #goRight
@@ -83,11 +89,6 @@
 	border: none;
 	cursor: pointer;
 	transition: 0.5s;
-}
-
-#goRight:hover
-{
-	background: rgba(0,0,0,0.356);
 }
 
 .donate1

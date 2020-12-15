@@ -13,7 +13,7 @@ const JoinUs = () => {
   }
 
   const nameValidate = (event) => {
-    if(name!="")
+    if(name!=="")
     {
       setNameFlag(true);
       setNameErr("");
@@ -34,7 +34,7 @@ const JoinUs = () => {
   }
 
   const dobValidate = (event) => {
-    if(dob!="")
+    if(dob!=="")
     {
       setDobFlag(true);
       setDobErr("");
@@ -91,7 +91,7 @@ const JoinUs = () => {
       setMobileFlag(false);
       setMobileErr("Phone number field is compulsary");
     }
-    else if(mobile.length!=10)
+    else if(mobile.length!==10)
     {
       setMobileErr(false);
       setMobileErr("Enter valid phone no(eg: 9123456780)")

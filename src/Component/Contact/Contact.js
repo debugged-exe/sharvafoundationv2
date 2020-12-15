@@ -13,7 +13,7 @@ const Contact = () =>{
   }
 
   const nameValidate = (event) => {
-    if(name!="")
+    if(name!=="")
     {
       setNameFlag(true);
       setNameErr("");
