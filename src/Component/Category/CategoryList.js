@@ -20,7 +20,7 @@ const CardList = () =>{
         }
     ]
     
-const CategoriesList = Categories.map(ctg =>(<Category ctg={ctg}/>))
+const CategoriesList = Categories.map((ctg,index) =>(<Category key = {index} ctg={ctg}/>))
     return(
     <div data-aos='fade-right' className='flex flex-wrap justify-around items-around mv5'>
         {CategoriesList}

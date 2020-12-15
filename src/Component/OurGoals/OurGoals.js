@@ -1,7 +1,7 @@
 import React from 'react';
-import './OurGoals.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import './OurGoals.css';
 import 'tachyons';
 
 const OurGoals = ({goal}) =>
