@@ -357,6 +357,36 @@ const JoinUs = () => {
       )
     {
       setSubmitErr("");
+      fetch('http://localhost:3001/joinus', {
+      method: 'post',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        name:name,
+        dob:dob,
+        email:email,
+        phone:mobile,
+        padd:permAdd,
+        pcity:permCity,
+        pstate:permState,
+        cadd:currAdd,
+        ccity:currCity,
+        cstate:currState,
+        bgrp:blood,
+        category:category,
+        message:reason,
+      })
+    })
+    .then(response => response.json())
+    .then(resp => {
+      if(resp==="Success")
+      {
+        alert("Registered successfully.");
+      }
+      else
+      {
+        alert("Registration unsuccessful.Try again.");
+      }
+    });
     }
     else
     {
