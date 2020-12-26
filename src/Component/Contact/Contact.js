@@ -52,18 +52,65 @@ const Contact = () =>{
     }
   }
 
+
+  const [message, setMessage] = useState("");
+  const [messageFlag, setMessageFlag] = useState(false);
+  const [messageErr, setMessageErr] = useState("");
+
+  const setMessageField = (event) => {
+    setMessage(event.target.value);
+  }
+
+    const messageValidate = (event) => {
+    if(message==="")
+    {
+      setMessageFlag(false);
+      setMessageErr("*Please enter the message you want to give us.");
+    }
+    else if(message.length>200 || message.length<20)
+    {
+      setMessageFlag(false);
+      setMessageErr("Message must contain 20-200 characters.");
+    }
+    else
+    {
+      setMessageFlag(true);
+      setMessageErr("");
+    }
+  }
+
   const submit = () => {
     if(
       nameFlag===true &&
       emailFlag===true
       )
     {
-
+      fetch('http://localhost:3001/insert', {
+      method: 'post',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        name:name,
+        email:email,
+        message:message
+      })
+    })
+    .then(response => response.json())
+    .then(resp => {
+      if(resp==="Success")
+      {
+        alert("Your message was recieved successfully.");
+      }
+      else
+      {
+        alert("Unsuccessful.Please try again.");
+      }
+    });
     }
     else
     {
       nameValidate();
       emailValidate();
+      messageValidate();
     }
   }
 
@@ -97,7 +144,10 @@ const Contact = () =>{
                 className="br3 shadow-4 mv3 pa5 input-reset ba bg-transparent hover-bg-black hover-black w-100" 
                 type="email" 
                 name="email-address"
-                autoComplete="blej"/>
+                autoComplete="blej"
+                onChange = {(event) => setMessageField(event)}
+                onBlur = {() => messageValidate()}/>
+                <div className="f4 red">{`${messageErr}`}</div>
                 <input 
                 className="shadow-4 b pv2 input-reset grow pointer dib" 
                 type="submit" 
