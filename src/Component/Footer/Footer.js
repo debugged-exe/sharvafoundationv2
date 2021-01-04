@@ -10,10 +10,10 @@ const Footer = () => {
             <div className='f4'><a>Copyrights</a></div>
             <div className='f4'><a>Privacy Policy</a></div>
             <div className="flex f3 justify-around">
-                <a className='pa2 ph3 link white fb'><FaFacebook /></a>
-                <a className='pa2 ph3 link white ig dim'><FaInstagram/></a>
-                <a className='pa2 ph3 link white wa'><FaWhatsapp/></a>
-                <a className='pa2 ph3 link white gm'><SiGmail/></a>
+                <a className='pa2 link white dim ph3'><FaFacebook color='white' /></a>
+                <a className='pa2 link white dim ph3'><FaInstagram color='white'/></a>
+                <a className='pa2 link white dim ph3'><FaWhatsapp color='white'/></a>
+                <a className='pa2 link white dim ph3'><SiGmail color='white'/></a>
             </div>
         </div>
         </footer>
