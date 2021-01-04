@@ -6,6 +6,14 @@ import slider3 from '../../Image/slider3.jpeg';
 import slider4 from '../../Image/slider4.jpeg';
 import './Slider.css';
 import 'tachyons';
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link,
+	useRouteMatch,
+	useParams
+  } from "react-router-dom";
 
 let sliderArr = [slider1,slider2,slider3,slider4];
 let QuotesArr = {"  रघु दीक्षित" : "लोका: समस्ता: सुखिनो भवन्तु ।", " रघु दीक्षित": "लोका: समस्ता: सुखिनो भवन्तु ।", "रघु दीक्षित  ": "लोका: समस्ता: सुखिनो भवन्तु ।", "रघु दीक्षित ": "लोका: समस्ता: सुखिनो भवन्तु ।"};
@@ -61,7 +69,9 @@ class Slider extends Component{
 								<div className="quote" style = {{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
 									<p className="tc pa1 f2 sty">{Quotes[index]}</p>
 									<p className="tc f3 sty mb2 sty">{By[index]}</p>
+									<Link className = "link" to = "/donate">
 									<div style = {this.state.btnStyle} onMouseEnter = {() => this.toggleHandler()} onMouseLeave = {() => this.toggleHandler()} className = "tc pv2 ph3 f4 link br2 ba bw1 pointer ma2 donate1 fw6">Donate</div>
+									</Link>
 								</div>
 							</div>
 						);

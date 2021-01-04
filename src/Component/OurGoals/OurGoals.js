@@ -33,7 +33,7 @@ const OurGoals = ({goal}) =>
                     <br/>or uncalled situation.</div>
             </div>
             <div style={{ maxWidth: '700px', height: 'auto', zIndex: '-1' }} data-aos='fade-up' className='ma3 w-60 br3 flex flex-start goalContainer'>
-        		<div style = {{width: `${width}%`}} className="filled br3 tc pa1 f5 white fw5">{`₹ ${complete} out of ₹ ${total}`}</div>
+        		<div style = {{width: `${width}%`}} className="filled br3 tc pa1 f5 white fw5 goalText">{`₹ ${complete} out of ₹ ${total}`}</div>
             </div>
             <div data-aos='fade-up' className='w-60 mt4 flex justify-center'>
             	<div style={hover1?{color: 'white', fontWeight: 'bold', border:'1.5px solid #e88f0a'}:{color: '#e88f0a', fontWeight: 'bold', border:'1.5px solid #e88f0a'}} onMouseEnter = {() => toggleHandler1()} onMouseLeave = {() => toggleHandler1()} className = "mh2 br3 ba btn ph4 pv3 grow">MAKE DONATION</div>
