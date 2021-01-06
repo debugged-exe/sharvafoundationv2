@@ -30,3 +30,25 @@
 	background-color: #e88f0a;
 	color: white;
 }
+
+.whi
+{
+	color: #e88f0a;
+}
+
+.whi:hover
+{
+	color: white;
+}
+
+@media only screen 
+   and (min-width : 320px) {
+   .goalText{
+   	padding: 2px;
+   	align-self: center;
+   }
+   .goalContainer{
+   	width: 90%;
+   	display: inline-block;
+   }
+}
