@@ -5,9 +5,9 @@ const Map = () => {
     return (
         <div className='ma2 mb4'>
             <p className='f2 tc'>Reach Us At</p>
-        <div className='flex items-center justify-around'>
+        <div className='flex items-center justify-around flex-wrap'>
             <img style={{height:'400px',width:'425px'}} src={map_src}></img>
-            <div className='bl bw1 pa3 map-box'>
+            <div className='pa3 map-box'>
                 <div>
                     <h3>Ankita Zadoo</h3>
                     <h5>Jammu</h5>
@@ -19,7 +19,7 @@ const Map = () => {
                     <p>55151321321</p>
                 </div>
             </div>
-            <div className='bl bw1 pa3 map-box'>
+            <div className='pa3 map-box'>
                 <div>
                     <h3>andra,sjasnjn</h3>
                     <h5>andra,sjasnjn</h5>

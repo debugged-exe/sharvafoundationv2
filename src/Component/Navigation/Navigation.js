@@ -31,12 +31,12 @@ const Navigation = ({src}) =>
 			}
 			</div>
 			<div className = {ham ? 'mh4 nav-menu active' : 'mh4 nav-menu'}>
-				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt2" to="/" ><p>Home</p></Link>
-				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt2" to="/event"><p>Events</p></Link>
-				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt2" to="/joinus"><p>Join Us</p></Link>
-				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt2" to="/contact"><p>Contact Us</p></Link>
-				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt2" to="/about"><p>About Us</p></Link>
-				<Link style={{outline:'none'}} className = "hov" to="/donate"><p className = "tc f4 link ph3 mh1 pv1 br2 pointer grow donate mt2">Donate</p></Link>
+				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt3" to="/" ><p>Home</p></Link>
+				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt3" to="/event"><p>Events</p></Link>
+				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt3" to="/joinus"><p>Join Us</p></Link>
+				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt3" to="/contact"><p>Contact Us</p></Link>
+				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt3" to="/about"><p>About Us</p></Link>
+				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt2 hov" to="/donate"><p className = "tc f4 link ph3 mh1 pv1 br2 pointer grow donate mt1">Donate</p></Link>
 			</div>
 		</nav>
 	);
