@@ -62,11 +62,11 @@ class App extends Component {
         <Switch>
           <Route exact path="/">
             <Slider />
-            <AboutUs/>
             <Counter />
-            <OurGoals goal = {goal}/>
-            <CategoryList/>
             <Testimonial/>
+            {/* <AboutUs/> */}
+            <CategoryList/>
+            <OurGoals goal = {goal}/>
             <RecentPost/>
           </Route>
 

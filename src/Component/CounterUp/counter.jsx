@@ -5,7 +5,7 @@ import { RiPlantFill,RiWomenFill } from "react-icons/ri";
 
 function Counter() {
   return (
-    <div className='flex flex-wrap justify-around items-center f3 pointer'>
+    <div className='mt5 flex flex-wrap justify-around items-center f3 pointer'>
       <div style={{width:'300px',background:'#e88f0a'}} className='flex flex-wrap justify-center items-center flex-column ba br3 pa3 ma2 grow shadow-4'>
         <TiGroup size='2.5rem' />
         <p>Volunteers</p>
