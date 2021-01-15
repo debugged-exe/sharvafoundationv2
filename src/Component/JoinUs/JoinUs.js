@@ -93,7 +93,7 @@ const JoinUs = () => {
     }
     else if(mobile.length!==10)
     {
-      setMobileErr(false);
+      setMobileFlag(false);
       setMobileErr("Enter valid phone no(eg: 9123456780)")
     }
     else
