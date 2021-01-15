@@ -16,7 +16,7 @@ import {
   } from "react-router-dom";
 
 let sliderArr = [slider1,slider2,slider3,slider4];
-let QuotesArr = {"  रघु दीक्षित" : "लोका: समस्ता: सुखिनो भवन्तु ।", " रघु दीक्षित": "लोका: समस्ता: सुखिनो भवन्तु ।", "रघु दीक्षित  ": "लोका: समस्ता: सुखिनो भवन्तु ।", "रघु दीक्षित ": "लोका: समस्ता: सुखिनो भवन्तु ।"};
+let QuotesArr = ["लोका: समस्ता: सुखिनो भवन्तु ।", "लोका: समस्ता: सुखिनो भवन्तु ।",  "लोका: समस्ता: सुखिनो भवन्तु ।", "लोका: समस्ता: सुखिनो भवन्तु ।"];
 let By = Object.keys(QuotesArr);
 let Quotes = Object.values(QuotesArr);
 
@@ -68,7 +68,6 @@ class Slider extends Component{
 								</button>
 								<div className="quote" style = {{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
 									<p className="tc pa1 f2 sty">{Quotes[index]}</p>
-									<p className="tc f3 sty mb2 sty">{By[index]}</p>
 									<Link className = "link" to = "/donate">
 									<div style = {this.state.btnStyle} onMouseEnter = {() => this.toggleHandler()} onMouseLeave = {() => this.toggleHandler()} className = "tc pv2 ph3 f4 link br2 ba bw1 pointer ma2 donate1 fw6">Donate</div>
 									</Link>
