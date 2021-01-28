@@ -73,10 +73,19 @@ class App extends Component {
             <RecentPost/>
           </Route>
 
-          <Route exact path="/event">
+          <Route exact path="/covid-event">
             <CovidEvent/>
+          </Route>
+
+          <Route exact path="/food-event">
             <FoodEvent/>
+          </Route>
+
+          <Route exact path="/blood-event">
             <BloodEvent/>
+          </Route>
+
+          <Route exact path="/green-event">
             <GreenEvent/>
           </Route>
 
