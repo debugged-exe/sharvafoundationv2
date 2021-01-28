@@ -19,7 +19,7 @@ const RecentPost = () => {
         {key:'Independence Day',summary:'We were able to enumerate Slippers, Cupcakes, Markers, White boards, Chocolates, Notebooks, Pencils and Sanitary napkins to Sarthak Seva Sangh in Pune District, Maharashtra.',id:'independence'}
     ]
     return (
-        <div className='flex flex-column items-center mb4'>
+        <div style={{overflow: 'hidden' }} className='flex flex-column items-center mb4'>
             <div data-aos='fade-up' className='f1 tc'>Recents</div>
         <div data-aos='fade-right' className='wrapper'>
             <RecentCard id={events[0].id} heading={events[0].key} value={events[0].summary}/>

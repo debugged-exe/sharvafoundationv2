@@ -24,7 +24,7 @@ const OurGoals = ({goal}) =>
 	const width = (complete*100)/total;
 
 	return(
-		<div className='mt4 tc flex flex-column items-center'>
+		<div className='mt4 tc flex flex-column items-center mb4'>
             <div data-aos='fade-down' style={{zIndex:'-1'}}>
                 <div className='f2'>Our Goals</div>
                     <div className='underline'></div>
