@@ -3,6 +3,7 @@ import {FaBars} from 'react-icons/fa';
 import {FaTimes} from 'react-icons/fa'; 
 import './Navigation.css';
 import 'tachyons';
+import {DropdownButton,Dropdown} from 'react-bootstrap'
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -24,11 +25,11 @@ const Navigation = ({src}) =>
 		<div>
 			<div className='dropmenus pa4 pv0 f4 pl3 mt2'>
 				<ul style={{textDecoration:'none', listStyle:'none'}} className='flex flex-column'>
-					<li className='pointer point'>Food</li>
-					<li className='pointer point'>Health</li>
-					<li className='pointer point'>Blood Donation</li>
-					<li className='pointer point'>Project Green</li>
-					<li className='pointer point'>Covid-19</li>
+				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt3" to="/food-event" ><li className='pointer point'>Food</li></Link>
+				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt3" to="/health-event" ><li className='pointer point'>Health</li></Link>
+				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt3" to="/blood-event" ><li className='pointer point'>Blood Donation</li></Link>
+				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt3" to="/green-event" ><li className='pointer point'>Project Green</li></Link>
+				<Link style={{outline:'none'}} className = "tc f4 link ph3 mh1 pointer hov mt3" to="/covid-event" ><li className='pointer point'>Covid-19</li></Link>
 				</ul>
 			</div>
 		<nav style = {{display: 'flex', justifyContent: 'start', alignItems: 'center'}} className = "vert-align shadow-1">
