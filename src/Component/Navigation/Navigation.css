@@ -58,6 +58,20 @@
 	border-color: white;
 }
 
+.dropmenus{
+	display: block;
+	position: fixed;
+    top: 45px;
+    box-shadow: 5px 6px 10px -4px rgba(0, 0, 0, 0.7);
+    background-color: white;
+    left: 15%;
+	z-index: 101;
+}
+
+.point:hover{
+	color:#e88f0a;
+}
+
 @media screen and (max-width: 950px){
 	.navbarItems
 	{
