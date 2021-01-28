@@ -14,7 +14,7 @@ const Donate = () => {
   }
 
   const nameValidate = (event) => {
-    if(name!="")
+    if(name!=="")
     {
       setNameFlag(true);
       setNameErr("");
@@ -71,7 +71,7 @@ const Donate = () => {
       setMobileFlag(false);
       setMobileErr("Phone number field is compulsary");
     }
-    else if(mobile.length!=10)
+    else if(mobile.length!==10)
     {
       setMobileErr(false);
       setMobileErr("Enter valid phone no(eg: 9123456780)")
@@ -1751,7 +1751,6 @@ async function displayRazorpay() {
               name="donated"
               step="5"
               autoComplete="blej"
-              onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57"
               onKeyDown={(event) => event.key==='.' && event.preventDefault()}
               onInput={(event) => numericFilter(event)}
               onChange={(event) => setDonateField(event)}

@@ -13,7 +13,7 @@ const JoinUs = () => {
   }
 
   const nameValidate = (event) => {
-    if(name!="")
+    if(name!=="")
     {
       setNameFlag(true);
       setNameErr("");
@@ -34,7 +34,7 @@ const JoinUs = () => {
   }
 
   const dobValidate = (event) => {
-    if(dob!="")
+    if(dob!=="")
     {
       setDobFlag(true);
       setDobErr("");
@@ -91,7 +91,7 @@ const JoinUs = () => {
       setMobileFlag(false);
       setMobileErr("Phone number field is compulsary");
     }
-    else if(mobile.length!=10)
+    else if(mobile.length!==10)
     {
       setMobileErr(false);
       setMobileErr("Enter valid phone no(eg: 9123456780)")
@@ -357,6 +357,36 @@ const JoinUs = () => {
       )
     {
       setSubmitErr("");
+      fetch('http://localhost:3001/joinus', {
+      method: 'post',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        name:name,
+        dob:dob,
+        email:email,
+        phone:mobile,
+        padd:permAdd,
+        pcity:permCity,
+        pstate:permState,
+        cadd:currAdd,
+        ccity:currCity,
+        cstate:currState,
+        bgrp:blood,
+        category:category,
+        message:reason,
+      })
+    })
+    .then(response => response.json())
+    .then(resp => {
+      if(resp==="Success")
+      {
+        alert("Registered successfully.");
+      }
+      else
+      {
+        alert("Registration unsuccessful.Try again.");
+      }
+    });
     }
     else
     {

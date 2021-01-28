@@ -21,7 +21,7 @@ import Testimonial from '../Component/Testimonial/Testimonial';
 
 import RecentPost from '../Component/RecentPost/RecentPost.js';
 
-import Event from '../Component/Events/Events.js';
+import CovidEvent from '../Component/Events/CovidEvents.js';
 import JoinUs from '../Component/JoinUs/JoinUs.js';
 
 import Contact from '../Component/Contact/Contact';
@@ -37,6 +37,9 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+import FoodEvent from '../Component/Events/FoodEvent';
+import BloodEvent from '../Component/Events/BloodEvent';
+import GreenEvent from '../Component/Events/GreenEvent';
 
 class App extends Component {
   constructor()
@@ -62,18 +65,19 @@ class App extends Component {
         <Switch>
           <Route exact path="/">
             <Slider />
-            <AboutUs/>
             <Counter />
-            <OurGoals goal = {goal}/>
-            <CategoryList/>
             <Testimonial/>
+            {/* <AboutUs/> */}
+            <CategoryList/>
+            <OurGoals goal = {goal}/>
             <RecentPost/>
-            <Contact/>
-            <Map/>
           </Route>
 
           <Route exact path="/event">
-            <Event/>
+            <CovidEvent/>
+            <FoodEvent/>
+            <BloodEvent/>
+            <GreenEvent/>
           </Route>
 
            <Route exact path="/joinus">
