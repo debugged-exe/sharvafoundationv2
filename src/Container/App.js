@@ -3,6 +3,8 @@ import './App.css';
 
 import Navigation from '../Component/Navigation/Navigation.js';
 
+import Featured from '../Component/Featured/Featured';
+
 import Slider from '../Component/Slider/Slider.js';
 
 import Logo from '../Image/Logo.png';
@@ -67,9 +69,9 @@ class App extends Component {
             <Slider />
             <Counter />
             <Testimonial/>
-            {/* <AboutUs/> */}
             <CategoryList/>
             <OurGoals goal = {goal}/>
+            <Featured/>
             <RecentPost/>
           </Route>
 

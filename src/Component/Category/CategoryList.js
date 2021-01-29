@@ -1,22 +1,25 @@
 import React from "react";
 import Category from "./Category";
+import bloodDonationBg from '../../Images/blooddonation.jpg';
+import treePlantationBg from '../../Images/projectgreen.jpg'
+import covidBg from  '../../Images/covid.jpg'
 
 const CardList = () =>{
     const Categories=[
         {
             heading:'Blood Donation',
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-            imgUrl:'https://images.unsplash.com/photo-1548013146-72479768bada?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80'
+            imgUrl:{bloodDonationBg}
         },
         {
             heading:'Tree PLantation',
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-            imgUrl:'https://images.unsplash.com/photo-1548013146-72479768bada?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80'
+            imgUrl:{treePlantationBg}
         },
         {
-            heading:'food Donation',
+            heading:'Covid-19',
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-            imgUrl:'https://images.unsplash.com/photo-1548013146-72479768bada?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80'
+            imgUrl:{covidBg}
         }
     ]
     
