@@ -7,7 +7,7 @@ import Featured from '../Component/Featured/Featured';
 
 import Slider from '../Component/Slider/Slider.js';
 
-import Logo from '../Image/Logo.png';
+import Logo from '../Images/logo.png';
 
 import AboutUs from '../Component/AboutUs/AboutUs.js';
 

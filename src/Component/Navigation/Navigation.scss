@@ -58,8 +58,9 @@
 	border-color: white;
 }
 
+.events{
 .dropmenus{
-	display: block;
+	display: none;
 	position: fixed;
     top: 45px;
     box-shadow: 5px 6px 10px -4px rgba(0, 0, 0, 0.7);
@@ -67,7 +68,11 @@
     left: 12%;
 	z-index: 101;
 }
+&:hover .dropmenus{
+	display: block;
+}
 
+}
 .point:hover{
 	color:#e88f0a;
 }

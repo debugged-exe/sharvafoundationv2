@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import slider1 from '../../Image/slider1.jpeg';
-import slider2 from '../../Image/slider2.jpeg';
-import slider3 from '../../Image/slider3.jpeg';
-import slider4 from '../../Image/slider4.jpeg';
+import slider1 from '../../Images/slider_1.jpeg';
+import slider2 from '../../Images/slider_2.jpeg';
+import slider3 from '../../Images/slider_3.JPG';
+import slider4 from '../../Images/slider_4.JPG';
 import './Slider.css';
 import 'tachyons';
 import {

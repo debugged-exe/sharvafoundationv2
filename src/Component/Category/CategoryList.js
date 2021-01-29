@@ -9,17 +9,17 @@ const CardList = () =>{
         {
             heading:'Blood Donation',
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-            imgUrl:{bloodDonationBg}
+            imgUrl:bloodDonationBg
         },
         {
             heading:'Tree PLantation',
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-            imgUrl:{treePlantationBg}
+            imgUrl:treePlantationBg
         },
         {
             heading:'Covid-19',
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-            imgUrl:{covidBg}
+            imgUrl:covidBg
         }
     ]
     
