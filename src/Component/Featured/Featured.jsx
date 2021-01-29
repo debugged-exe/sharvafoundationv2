@@ -4,7 +4,7 @@ import 'tachyons';
 
 const Featured = () => {
     return (
-        <div  className='flex justif-between mh2 flex-wrap items-center'>
+        <div  className='flex justif-between mh2 flex-wrap items-center mt4'>
             <div  className='featured-background ph2'>
 
             </div>
