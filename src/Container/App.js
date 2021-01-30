@@ -3,9 +3,11 @@ import './App.css';
 
 import Navigation from '../Component/Navigation/Navigation.js';
 
+import Featured from '../Component/Featured/Featured';
+
 import Slider from '../Component/Slider/Slider.js';
 
-import Logo from '../Image/Logo.png';
+import Logo from '../Images/logo.png';
 
 import AboutUs from '../Component/AboutUs/AboutUs.js';
 
@@ -21,7 +23,7 @@ import Testimonial from '../Component/Testimonial/Testimonial';
 
 import RecentPost from '../Component/RecentPost/RecentPost.js';
 
-import Event from '../Component/Events/Events.js';
+import CovidEvent from '../Component/Events/CovidEvents.js';
 import JoinUs from '../Component/JoinUs/JoinUs.js';
 
 import Contact from '../Component/Contact/Contact';
@@ -37,6 +39,9 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+import FoodEvent from '../Component/Events/FoodEvent';
+import BloodEvent from '../Component/Events/BloodEvent';
+import GreenEvent from '../Component/Events/GreenEvent';
 
 class App extends Component {
   constructor()
@@ -64,14 +69,26 @@ class App extends Component {
             <Slider />
             <Counter />
             <Testimonial/>
-            {/* <AboutUs/> */}
             <CategoryList/>
             <OurGoals goal = {goal}/>
+            <Featured/>
             <RecentPost/>
           </Route>
 
-          <Route exact path="/event">
-            <Event/>
+          <Route exact path="/covid-event">
+            <CovidEvent/>
+          </Route>
+
+          <Route exact path="/food-event">
+            <FoodEvent/>
+          </Route>
+
+          <Route exact path="/blood-event">
+            <BloodEvent/>
+          </Route>
+
+          <Route exact path="/green-event">
+            <GreenEvent/>
           </Route>
 
            <Route exact path="/joinus">

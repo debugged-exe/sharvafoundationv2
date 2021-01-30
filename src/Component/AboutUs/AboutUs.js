@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'tachyons';
 import 'aos/dist/aos.css';
+import bgImage from '../../Images/slider_1.jpeg'
 
 const AboutUs = () => {
     useEffect(() => {
@@ -9,7 +10,7 @@ const AboutUs = () => {
     }, []);
     return (
         <div data-name="article-full-bleed-background">
-            <div class="cf" style={{background: `url(http://mrmrs.github.io/photos/12.jpg)`, backgroundSize: 'cover'}}>
+            <div class="cf" style={{background:{bgImage} , backgroundSize: 'cover'}}>
                 <div class="fl pa3 pa4-ns bg-white black-70 measure-narrow f3 times">
                     <header class="bb b--black-70 pv4">
                         <h3 class="f2 fw7 ttu tracked lh-title mt0 mb3">About Sharva</h3>
