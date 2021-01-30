@@ -238,3 +238,20 @@
     border: 2px solid grey;
     background-color: #dddddd;
 }
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    padding: 10px;
+    margin-left: 30px;
+}
+
+@media only screen 
+   and (max-width : 900px) {
+    .other
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}

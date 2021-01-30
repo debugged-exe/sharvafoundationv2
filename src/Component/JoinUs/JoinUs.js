@@ -1932,37 +1932,129 @@ const JoinUs = () => {
         </div>
         <h2>Individual's Category</h2>
         <div className="margin">
-          <div className="left1">Category</div>
-          <div className="center1">:</div>
-          <div className="right1">
-            <select 
-            id="category" 
-            name="category"
-            autoComplete="blej"
-            onChange = {(event) => setCategoryField(event)}
-            onBlur = {() => categoryValidate()}>
-              <option value="none">--Select Category--</option>
-              <option value="working">Working</option>
-              <option value="student">Student</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div className="f4 red">{`${categoryErr}`}</div>
+          <span>
+            I request you to choose your area in which you would like to work as volunteer.<br/>
+            You may choose more than one field if it interests you.
+          </span>
         </div>
-        <div className="margin">
-          <div className="text-box">
-            <div className="left1">Why do you want to join us?</div>
-            <div className="center1">:</div>
-            <div className="right1">
-              <textarea
-                className="input"
-                name="cause"
-                id=""
-                autoComplete="blej"
-                onChange = {(event) => setReasonField(event)}
-                onBlur = {() => reasonValidate()}
-              ></textarea>
-            </div>
+        <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
+          <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
+            <input type="checkbox" value="field_work" />
+          </span>
+          <div style={{marginRight: '5px', marginLeft: '5px'}}>
+            <h4>Field Work</h4>
+            <span>Should be available to come for distribution</span>
+          </div>
+        </div>
+        <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
+          <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
+            <input type="checkbox" value="photography" />
+          </span>
+          <div style={{marginRight: '5px', marginLeft: '5px'}}>
+            <h4>Photography</h4>
+            <span>Should have a DSLR and photography skills</span>
+          </div>
+        </div>
+        <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
+          <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
+            <input type="checkbox" value="video_editor" />
+          </span>
+          <div style={{marginRight: '5px', marginLeft: '5px'}}>
+            <h4>Video Editor</h4>
+            <span>
+            Should have proficient video editing skills,<br/>
+            and can work with softwares like Adobe premiere Pro,<br/>
+            Adobe after effects, Window moview editor
+            </span>
+          </div>
+        </div>
+        <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
+          <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
+            <input type="checkbox" value="content_writing" />
+          </span>
+          <div style={{marginRight: '5px', marginLeft: '5px'}}>
+            <h4>Content Writing</h4>
+            <span>
+            Should have knowledge in English and Hindi writing
+            </span>
+          </div>
+        </div>
+         <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
+          <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
+            <input type="checkbox" value="fund_raising" />
+          </span>
+          <div style={{marginRight: '5px', marginLeft: '5px'}}>
+            <h4>Fund Raising</h4>
+            <span>
+            Ideas and help in execution of getting funds for events
+            </span>
+          </div>
+        </div>
+          <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
+          <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
+            <input type="checkbox" value="creatives" />
+          </span>
+          <div style={{marginRight: '5px', marginLeft: '5px'}}>
+            <h4>Creatives</h4>
+            <span>
+            Should have knowledge in softwares like Photoshop,<br/>
+            Corel draw or Illustrator to make graphics
+            </span>
+          </div>
+        </div>
+          <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
+          <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
+            <input type="checkbox" value="awareness_sessions" />
+          </span>
+          <div style={{marginRight: '5px', marginLeft: '5px'}}>
+            <h4>Awareness Sessions</h4>
+            <span>
+            Should have public speaking skills to conduct and organise awareness programs
+            </span>
+          </div>
+        </div>
+          <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
+          <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
+            <input type="checkbox" value="marketing" />
+          </span>
+          <div style={{marginRight: '5px', marginLeft: '5px'}}>
+            <h4>Marketing</h4>
+            <span>
+            Should have knowledge in marketing on ways to promote and uplift the ngo<br/>
+            on social media and other platforms
+            </span>
+          </div>
+        </div>
+          <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
+          <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
+            <input type="checkbox" value="strategies_buildup" />
+          </span>
+          <div style={{marginRight: '5px', marginLeft: '5px'}}>
+            <h4>Strategies Buildup</h4>
+            <span>
+            Creative Mind to come up with new ideas for the NGO
+            </span>
+          </div>
+        </div>
+        <div className="margin other">
+          <div style={{marginRight: '5px', marginLeft: '5px'}}>
+            <h4>Other</h4>
+            <span>
+            If there is some area you wish to work in, and it's not mentioned above,<br/>
+            then write them in this section
+            </span>
+          </div>
+          <div style={{margin: '10px'}}>
+            <span className="right1">
+            <textarea
+            className="input"
+            name="cause"
+            id=""
+            autoComplete="blej"
+            onChange = {(event) => setReasonField(event)}
+            onBlur = {() => reasonValidate()}
+            ></textarea>
+            </span>
           </div>
           <div className="f4 red">{`${reasonErr}`}</div>
         </div>
