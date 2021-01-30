@@ -42,6 +42,7 @@ import {
 import FoodEvent from '../Component/Events/FoodEvent';
 import BloodEvent from '../Component/Events/BloodEvent';
 import GreenEvent from '../Component/Events/GreenEvent';
+import Testimonials from '../Component/Testimonial/Testimonial';
 
 class App extends Component {
   constructor()
@@ -105,12 +106,13 @@ class App extends Component {
           </Route>
 
           <Route exact path="/about">
-           <div style={{marginTop:100}}>
-            <AboutUs/>
+            <Slider />
             <Counter />
-            <OurGoals goal = {goal}/>
+            <Testimonial/>
             <CategoryList/>
-            </div>
+            <OurGoals goal = {goal}/>
+            <Featured/>
+            <RecentPost/>
           </Route>
 
           <Route exact path="/donate">
