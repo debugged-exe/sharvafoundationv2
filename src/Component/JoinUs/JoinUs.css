@@ -31,6 +31,10 @@
     align-items: center;
 }
 
+#reason {
+    width: 40vw;
+}
+
 .thanks{
     display: none;
     position: absolute;
@@ -201,7 +205,9 @@
     }
 }
 
-
+#verify {
+    width: 170px;
+}
 
 @media only screen and (max-width:300px){
     .backgroundjoinus{

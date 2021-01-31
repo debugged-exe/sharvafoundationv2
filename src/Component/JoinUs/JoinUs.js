@@ -290,50 +290,51 @@ const JoinUs = () => {
     }
   }
 
-  const [category, setCategory] = useState("none");
-  const [categoryFlag, setCategoryFlag] = useState(false);
-  const [categoryErr, setCategoryErr] = useState("");
+  const [category, setCategory] = useState([])
+  const [categoryFlag, setCategoryFlag] = useState(false)
+  const [categoryErr, setCategoryErr] = useState('')
 
-  const setCategoryField = (event) => {
-    setCategory(event.target.value);
+  const addCategory = (event) => {
+    const {checked, value} = event.target;
+    if (checked) {
+      const arr = value;
+      category.push(arr);
+      setCategoryFlag(true);
+      setCategoryErr('');
+    }
+    else
+    {
+      const index = category.indexOf(value)
+      if (index > -1) {
+        category.splice(index, 1)
+        if(category.length===0)
+        {
+          setCategoryFlag(false);
+        }
+      }
+    }
   }
 
   const categoryValidate = () => {
-    if(category==="none")
+    if(categoryFlag===false)
     {
-      setCategoryFlag(false);
-      setCategoryErr("*Category is compulsary");
-    }
-    else
-    {
-      setCategoryFlag(true);
-      setCategoryErr("");
+      setCategoryErr('Mention atleast one category you want to work in.')
     }
   }
 
-  const [reason, setReason] = useState("");
-  const [reasonFlag, setReasonFlag] = useState(false);
-  const [reasonErr, setReasonErr] = useState("");
+  const [reasonFlag, setReasonFlag] = useState(false)
 
-  const setReasonField = (event) => {
-    setReason(event.target.value);
-  }
-
-  const reasonValidate = (event) => {
-    if(reason==="")
+  const setReason = () => {
+    const reason = document.getElementById('reason')
+    if(reason.value.length>200 || reason.value.length<20)
     {
-      setReasonFlag(false);
-      setReasonErr("*Reason Field is compulsary.");
-    }
-    else if(reason.length>200 || reason.length<20)
-    {
-      setReasonFlag(false);
-      setReasonErr("Reason must contain 20-200 characters.");
+      setCategoryFlag(false)
+      setCategoryErr('Reason must contain 20-200 characters')
     }
     else
     {
-      setReasonFlag(true);
-      setReasonErr("");
+      setCategoryFlag(true)
+      setCategoryErr('')
     }
   }
 
@@ -352,8 +353,7 @@ const JoinUs = () => {
       currCityFlag===true &&
       currStateFlag===true &&
       bloodFlag===true &&
-      categoryFlag===true &&
-      reasonFlag===true
+      categoryFlag===true
       )
     {
       setSubmitErr("");
@@ -372,8 +372,7 @@ const JoinUs = () => {
         ccity:currCity,
         cstate:currState,
         bgrp:blood,
-        category:category,
-        message:reason,
+        category:category
       })
     })
     .then(response => response.json())
@@ -402,7 +401,6 @@ const JoinUs = () => {
       currStateValidate();
       bloodValidate();
       categoryValidate();
-      reasonValidate();
       setSubmitErr("*Error.Check if all fields are filled completely.");
     }
   }
@@ -1939,7 +1937,11 @@ const JoinUs = () => {
         </div>
         <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
           <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
-            <input type="checkbox" value="field_work" />
+            <input 
+            type="checkbox" 
+            value="field_work" 
+            onChange={(event) => addCategory(event)}
+            />
           </span>
           <div style={{marginRight: '5px', marginLeft: '5px'}}>
             <h4>Field Work</h4>
@@ -1948,7 +1950,11 @@ const JoinUs = () => {
         </div>
         <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
           <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
-            <input type="checkbox" value="photography" />
+            <input 
+            type="checkbox" 
+            value="photography"
+            onChange={(event) => addCategory(event)}
+            />
           </span>
           <div style={{marginRight: '5px', marginLeft: '5px'}}>
             <h4>Photography</h4>
@@ -1957,7 +1963,11 @@ const JoinUs = () => {
         </div>
         <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
           <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
-            <input type="checkbox" value="video_editor" />
+            <input 
+            type="checkbox" 
+            value="video_editor" 
+            onChange={(event) => addCategory(event)}
+            />
           </span>
           <div style={{marginRight: '5px', marginLeft: '5px'}}>
             <h4>Video Editor</h4>
@@ -1970,7 +1980,11 @@ const JoinUs = () => {
         </div>
         <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
           <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
-            <input type="checkbox" value="content_writing" />
+            <input 
+            type="checkbox" 
+            value="content_writing" 
+            onChange={(event) => addCategory(event)}
+            />
           </span>
           <div style={{marginRight: '5px', marginLeft: '5px'}}>
             <h4>Content Writing</h4>
@@ -1981,7 +1995,11 @@ const JoinUs = () => {
         </div>
          <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
           <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
-            <input type="checkbox" value="fund_raising" />
+            <input 
+            type="checkbox" 
+            value="fund_raising" 
+            onChange={(event) => addCategory(event)}
+            />
           </span>
           <div style={{marginRight: '5px', marginLeft: '5px'}}>
             <h4>Fund Raising</h4>
@@ -1992,7 +2010,11 @@ const JoinUs = () => {
         </div>
           <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
           <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
-            <input type="checkbox" value="creatives" />
+            <input 
+            type="checkbox" 
+            value="creatives" 
+            onChange={(event) => addCategory(event)}
+            />
           </span>
           <div style={{marginRight: '5px', marginLeft: '5px'}}>
             <h4>Creatives</h4>
@@ -2004,7 +2026,11 @@ const JoinUs = () => {
         </div>
           <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
           <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
-            <input type="checkbox" value="awareness_sessions" />
+            <input 
+            type="checkbox"
+            value="awareness_sessions" 
+            onChange={(event) => addCategory(event)}
+            />
           </span>
           <div style={{marginRight: '5px', marginLeft: '5px'}}>
             <h4>Awareness Sessions</h4>
@@ -2015,7 +2041,11 @@ const JoinUs = () => {
         </div>
           <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
           <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
-            <input type="checkbox" value="marketing" />
+            <input 
+            type="checkbox" 
+            value="marketing" 
+            onChange={(event) => addCategory(event)}
+            />
           </span>
           <div style={{marginRight: '5px', marginLeft: '5px'}}>
             <h4>Marketing</h4>
@@ -2027,7 +2057,11 @@ const JoinUs = () => {
         </div>
           <div style={{margin: '20px', display: 'flex', justifyContent: 'start', alignItems: 'center'}}>
           <span className="left1" style={{marginRight: '5px', marginLeft: '5px'}}>
-            <input type="checkbox" value="strategies_buildup" />
+            <input 
+            type="checkbox" 
+            value="strategies_buildup" 
+            onChange={(event) => addCategory(event)}
+            />
           </span>
           <div style={{marginRight: '5px', marginLeft: '5px'}}>
             <h4>Strategies Buildup</h4>
@@ -2045,18 +2079,25 @@ const JoinUs = () => {
             </span>
           </div>
           <div style={{margin: '10px'}}>
-            <span className="right1">
+            <div className="right1" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'start'}}>
             <textarea
             className="input"
             name="cause"
-            id=""
+            id="reason"
             autoComplete="blej"
-            onChange = {(event) => setReasonField(event)}
-            onBlur = {() => reasonValidate()}
+            disabled = {categoryFlag}
             ></textarea>
-            </span>
+            <input
+            className="submit-btn"
+            type="button"
+            onClick={() => setReason()}
+            value="Verify reason"
+            id="verify"
+            disabled = {categoryFlag}
+            />
+            </div>
           </div>
-          <div className="f4 red">{`${reasonErr}`}</div>
+          <div className="f4 red">{`${categoryErr}`}</div>
         </div>
         <div className="margin btns">
           <input
